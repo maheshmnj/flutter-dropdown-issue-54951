@@ -40,6 +40,7 @@ class _MyHomePageState extends State<MyHomePage> {
     // TODO: implement initState
     super.initState();
     fetchData();
+    // reasonsList = List.generate(10, (index) => index.toString()).toList();
   }
 
   Future<void> fetchData() async {
@@ -51,6 +52,7 @@ class _MyHomePageState extends State<MyHomePage> {
       print(result);
       Iterable data = result['success']['return reasons'];
       reasonsList = data.map((e) => e['reason'].toString()).toList();
+      setState(() {});
       print(reasonsList);
     }
   }

@@ -1,0 +1,93 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.example.dropdown_issue_flutter"
+4    android:versionCode="1"
+5    android:versionName="1.0.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="16"
+9        android:targetSdkVersion="28" />
+10    <!--
+11         Flutter needs it to communicate with the running application
+12         to allow setting breakpoints, to provide hot reload, etc.
+13    -->
+14    <uses-permission android:name="android.permission.INTERNET" />
+14-->/Users/mac006/Desktop/flutter-dropdown-issue-54951/android/app/src/main/AndroidManifest.xml:7:3-65
+14-->/Users/mac006/Desktop/flutter-dropdown-issue-54951/android/app/src/main/AndroidManifest.xml:7:20-62
+15
+16    <application
+16-->/Users/mac006/Desktop/flutter-dropdown-issue-54951/android/app/src/main/AndroidManifest.xml:8:3-29:17
+17        android:name="io.flutter.app.FlutterApplication"
+17-->/Users/mac006/Desktop/flutter-dropdown-issue-54951/android/app/src/main/AndroidManifest.xml:8:16-64
+18        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+18-->[androidx.core:core:1.1.0] /Users/mac006/.gradle/caches/transforms-2/files-2.1/a528b13ac93e64cafa3d0480e2c93207/core-1.1.0/AndroidManifest.xml:24:18-86
+19        android:debuggable="true"
+20        android:icon="@mipmap/ic_launcher"
+20-->/Users/mac006/Desktop/flutter-dropdown-issue-54951/android/app/src/main/AndroidManifest.xml:8:104-138
+21        android:label="dropdown_issue_flutter" >
+21-->/Users/mac006/Desktop/flutter-dropdown-issue-54951/android/app/src/main/AndroidManifest.xml:8:65-103
+22        <activity
+22-->/Users/mac006/Desktop/flutter-dropdown-issue-54951/android/app/src/main/AndroidManifest.xml:9:5-25:16
+23            android:name="com.example.dropdown_issue_flutter.MainActivity"
+23-->/Users/mac006/Desktop/flutter-dropdown-issue-54951/android/app/src/main/AndroidManifest.xml:9:15-43
+24            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
+24-->/Users/mac006/Desktop/flutter-dropdown-issue-54951/android/app/src/main/AndroidManifest.xml:9:110-260
+25            android:hardwareAccelerated="true"
+25-->/Users/mac006/Desktop/flutter-dropdown-issue-54951/android/app/src/main/AndroidManifest.xml:9:261-295
+26            android:launchMode="singleTop"
+26-->/Users/mac006/Desktop/flutter-dropdown-issue-54951/android/app/src/main/AndroidManifest.xml:9:44-74
+27            android:theme="@style/LaunchTheme"
+27-->/Users/mac006/Desktop/flutter-dropdown-issue-54951/android/app/src/main/AndroidManifest.xml:9:75-109
+28            android:windowSoftInputMode="adjustResize" >
+28-->/Users/mac006/Desktop/flutter-dropdown-issue-54951/android/app/src/main/AndroidManifest.xml:9:296-338
+29
+30            <!--
+31           Specifies an Android theme to apply to this Activity as soon as
+32                 the Android process has started. This theme is visible to the user
+33                 while the Flutter UI initializes. After that, this theme continues
+34                 to determine the Window background behind the Flutter UI.
+35            -->
+36            <meta-data
+36-->/Users/mac006/Desktop/flutter-dropdown-issue-54951/android/app/src/main/AndroidManifest.xml:14:7-114
+37                android:name="io.flutter.embedding.android.NormalTheme"
+37-->/Users/mac006/Desktop/flutter-dropdown-issue-54951/android/app/src/main/AndroidManifest.xml:14:18-73
+38                android:resource="@style/NormalTheme" />
+38-->/Users/mac006/Desktop/flutter-dropdown-issue-54951/android/app/src/main/AndroidManifest.xml:14:74-111
+39            <!--
+40           Displays an Android View that continues showing the launch screen
+41                 Drawable until Flutter paints its first frame, then this splash
+42                 screen fades out. A splash screen is useful to avoid any visual
+43                 gap between the end of Android's launch screen and the painting of
+44                 Flutter's first frame.
+45            -->
+46            <meta-data
+46-->/Users/mac006/Desktop/flutter-dropdown-issue-54951/android/app/src/main/AndroidManifest.xml:20:7-132
+47                android:name="io.flutter.embedding.android.SplashScreenDrawable"
+47-->/Users/mac006/Desktop/flutter-dropdown-issue-54951/android/app/src/main/AndroidManifest.xml:20:18-82
+48                android:resource="@drawable/launch_background" />
+48-->/Users/mac006/Desktop/flutter-dropdown-issue-54951/android/app/src/main/AndroidManifest.xml:20:83-129
+49
+50            <intent-filter>
+50-->/Users/mac006/Desktop/flutter-dropdown-issue-54951/android/app/src/main/AndroidManifest.xml:21:7-24:23
+51                <action android:name="android.intent.action.MAIN" />
+51-->/Users/mac006/Desktop/flutter-dropdown-issue-54951/android/app/src/main/AndroidManifest.xml:22:9-61
+51-->/Users/mac006/Desktop/flutter-dropdown-issue-54951/android/app/src/main/AndroidManifest.xml:22:17-58
+52
+53                <category android:name="android.intent.category.LAUNCHER" />
+53-->/Users/mac006/Desktop/flutter-dropdown-issue-54951/android/app/src/main/AndroidManifest.xml:23:9-69
+53-->/Users/mac006/Desktop/flutter-dropdown-issue-54951/android/app/src/main/AndroidManifest.xml:23:19-66
+54            </intent-filter>
+55        </activity>
+56        <!--
+57         Don't delete the meta-data below.
+58             This is used by the Flutter tool to generate GeneratedPluginRegistrant.java
+59        -->
+60        <meta-data
+60-->/Users/mac006/Desktop/flutter-dropdown-issue-54951/android/app/src/main/AndroidManifest.xml:28:5-68
+61            android:name="flutterEmbedding"
+61-->/Users/mac006/Desktop/flutter-dropdown-issue-54951/android/app/src/main/AndroidManifest.xml:28:16-47
+62            android:value="2" />
+62-->/Users/mac006/Desktop/flutter-dropdown-issue-54951/android/app/src/main/AndroidManifest.xml:28:48-65
+63    </application>
+64
+65</manifest>
